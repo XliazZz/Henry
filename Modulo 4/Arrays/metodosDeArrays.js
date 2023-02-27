@@ -7,7 +7,7 @@ El método pop() elimina y devuelve el último elemento de un arreglo. Podemos g
 
 El método unshift() agrega uno o más elementos al inicio de un arreglo, y devuelve la nueva longitud del array.
 
-El método shift() elimina y devuelve el primer elemento de un arreglo.
+El método shift() elimina y devuelve el primer elemento de un arreglo. Podemos guardar el valor eliminado usando el metodo shift() en una variable o otra cosa.
 
 
 METODOS VARIOS
