@@ -3,7 +3,7 @@ METODOS DE INSERCIÒN
 
 El método push() añade uno o más elementos al final de un arreglo, y devuelve la nueva longitud del array.
 
-El método pop() elimina y devuelve el último elemento de un arreglo.
+El método pop() elimina y devuelve el último elemento de un arreglo. Podemos guardar el valor eliminado usando el metodo pop() en una variable o otra cosa.
 
 El método unshift() agrega uno o más elementos al inicio de un arreglo, y devuelve la nueva longitud del array.
 
