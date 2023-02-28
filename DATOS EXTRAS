@@ -1,4 +1,11 @@
- En JavaScript, puedes determinar el tipo de una variable o un valor con el operador typeof, de la siguiente manera:
+//En JavaScript, puedes determinar el tipo de una variable o un valor con el operador typeof, de la siguiente manera:
  
 typeof 3 === 'string'
 typeof '3' === 'number'
+
+
+//El operador de estricta desigualdad !== es el opuesto lógico del operador de estricta igualdad.
+
+3 !==  3  // false
+3 !== '3' // true
+4 !==  3  // true
