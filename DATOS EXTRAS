@@ -9,3 +9,7 @@ typeof '3' === 'number'
 3 !==  3  // false
 3 !== '3' // true
 4 !==  3  // true
+
+
+//La segunda manera de acceder a las propiedades de un objeto es con la notación de corchetes ([]). 
+//Si la propiedad del objeto al que intentas acceder tiene un espacio en el nombre, necesitarás usar notación de corchetes.
