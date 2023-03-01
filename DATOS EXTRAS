@@ -18,4 +18,25 @@ typeof '3' === 'number'
 //a función parseInt() analiza una cadena y devuelve un entero. A continuación, te presentamos un ejemplo:
 
 const a = parseInt("007");
-//La función anterior convierte la cadena 007 al entero 7. Si el primer carácter de la cadena no puede ser convertido en un número, entonces devuelve NaN.
+//La función anterior convierte la cadena 007 al entero 7. 
+//Si el primer carácter de la cadena no puede ser convertido en un número, entonces devuelve NaN.
+
+
+//El operador condicional, también llamado el operador ternario, 
+//puede utilizarse como una expresión if-else de una sola línea.
+
+unction findGreater(a, b) {
+  if(a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater or equal";
+  }
+}
+
+//Esto puede reescribirse usando el operador condicional:
+
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater or equal";
+}
+
