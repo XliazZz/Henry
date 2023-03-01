@@ -22,6 +22,7 @@ const a = parseInt("007");
 //Si el primer carácter de la cadena no puede ser convertido en un número, entonces devuelve NaN.
 
 
+
 //El operador condicional, también llamado el operador ternario, 
 //puede utilizarse como una expresión if-else de una sola línea.
 
@@ -39,4 +40,33 @@ unction findGreater(a, b) {
 function findGreater(a, b) {
   return a > b ? "a is greater" : "b is greater or equal";
 }
+
+
+// También puedes encadenarlos para comprobar múltiples condiciones.
+
+//La siguiente función utiliza sentencias if, else if, y else para comprobar múltiples condiciones:
+
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return "a and b are equal";
+  }
+  else if (a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater";
+  }
+}
+
+
+//La función anterior puede ser reescrita utilizando múltiples operadores condicionales:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
+
+
+
 
