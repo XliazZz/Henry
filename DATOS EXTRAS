@@ -13,3 +13,9 @@ typeof '3' === 'number'
 
 //La segunda manera de acceder a las propiedades de un objeto es con la notación de corchetes ([]). 
 //Si la propiedad del objeto al que intentas acceder tiene un espacio en el nombre, necesitarás usar notación de corchetes.
+
+
+//a función parseInt() analiza una cadena y devuelve un entero. A continuación, te presentamos un ejemplo:
+
+const a = parseInt("007");
+//La función anterior convierte la cadena 007 al entero 7. Si el primer carácter de la cadena no puede ser convertido en un número, entonces devuelve NaN.
