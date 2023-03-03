@@ -125,6 +125,20 @@ multiplier(4, 2) devolverá el valor 8.
 
 
 
+// ES6 introduce parametros por defecto para funciones.
+
+const greeting = (name = "Anonymous") => "Hello " + name;
+
+console.log(greeting("John"));
+console.log(greeting());
+
+//La consola mostrará las cadenas Hello John y Hello Anonymous.
+//El parámetro por defecto entra en juego cuando el argumento no es especificado (es indefinido). 
+//Como puedes ver en el ejemplo, el parámetro name recibirá su valor por defecto Anonymous cuando no proveas un valor para el parámetro. 
+
+
+
+
 
 
 
