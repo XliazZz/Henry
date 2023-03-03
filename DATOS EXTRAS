@@ -206,7 +206,7 @@ const { name: userName, age: userAge } = user;
 //En la variable userName quedara el valor 'John Doe' y viceversa con la edad.
 
 
-//SINTAXIS DE DESESTRUCTURACION PARA ASIGNAR VARIABLES DESDE OBJETOS ANIDADOS
+//SINTAXIS DE DESESTRUCTURACION/DESEMPAQUETADO PARA ASIGNAR VARIABLES DESDE OBJETOS ANIDADOS
 
 //Usando un objeto similar a los ejemplos anteriores:
 
