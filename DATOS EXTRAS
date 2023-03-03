@@ -172,6 +172,46 @@ console.log(arr2);
 
 
 
+//SINTAXIS DE DESESTRUCTURACION PARA EXTRAR VALORES DE OBJETOS
+
+//Considera el siguiente código:
+
+const user = { name: 'John Doe', age: 34 };
+
+const name = user.name;
+const age = user.age;
+
+//name tendría una cadena con valor John Doe, y age tendría el número 34.
+
+//Aquí hay una sentencia de asignación equivalente usando la sintaxis de desestructuración de ES6:
+
+const { name, age } = user;
+
+//De nuevo, name tendrá una cadena con valor John Doe, y age tendrá el número 34.
+//Esta es una forma mucho mas limpia de extraer los valores del objeto sin necesidad de do-notation u bracket-notation.
+
+
+//ASIGNAR VALORES DE OBJETOS A VARIABLES CON SINTAXIS DE DESESTRUCTURACION.
+
+//Puedes hacer esto al poner el nuevo nombre después de dos puntos al asignar el valor.
+
+//Usando el mismo objeto del ejemplo anterior:
+
+const user = { name: 'John Doe', age: 34 };
+
+//Así es como puedes dar nuevos nombres de variables en la asignación:
+
+const { name: userName, age: userAge } = user;
+
+//En la variable userName quedara el valor 'John Doe' y viceversa con la edad.
+
+
+
+
+
+
+
+
 
 
 
