@@ -138,6 +138,23 @@ console.log(greeting());
 
 
 
+// ES6 introduce el parámetro rest para los parámetros de función. Con el parámetro rest, puedes crear funciones que tomen un número variable de argumentos.
+//'...' es el rest
+
+function howMany(...args) {
+  return "You have passed " + args.length + " arguments.";
+}
+console.log(howMany(0, 1, 2));
+console.log(howMany("string", null, [1, 2, 3], { }));
+//La consola mostrará las cadenas You have passed 3 arguments. y You have passed 4 arguments..
+
+
+//Para calcular el valor máximo en un arreglo se usa el operador de propagación:
+
+const arr = [6, 89, 3, 45];
+const maximus = Math.max(...arr);
+
+//maximus tendría un valor de 89.
 
 
 
