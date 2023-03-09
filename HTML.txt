@@ -1,0 +1,208 @@
+/*Los h1,h2,h3,...h6, son los encabazados de la pagina o etiquetas tipo titulos.*/
+/*El h1 es el mas importantes y el menos importante es el h6.*/
+
+            <h1> 'texto' </h1>
+
+
+<!-- ELEMENTOS:
+   
+El elemento p es usado para crear un párrafo de texto en sitios webs.
+Ejemplo;
+            <p> 'parrafo' </p>      
+
+<a> Hace un enclace que lleva a otra pagina.
+Ejemplo;
+            <a href='https://freecodecamp.org'></a>
+
+El texto de un enlace debe colocarse entre la etiqueta de apertura y la etiqueta de cierre de un elemento (a). 
+Ejemplo; 
+            <a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a> es un enlace con el texto click here to go to freeCodeCamp.org.
+
+Puedes hacer lo mismo con las palabras dentro de un elemento, como un elemento de p.
+Ejemplo;
+            <p>See more <a href='https://freecatphotoapp.com'>cat photos</a> in our gallery.</p>
+
+PONER UN LINK EN UNA IMAGEN:
+            <a href='https://freecatphotoapp.com'> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."> </a>
+
+
+<section> sirve para separa el contenido.
+Ejemplo;
+            <main>
+            <h1>CatPhotoApp</h1>
+        |-->  <section>
+            <h2>Cat Photos</h2>
+            <!-- TODO: Add link to cat photos -->
+            <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+            <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        |-->  </section>
+            </main>
+
+<figure> sirve para asociar una imagena una descripción.
+Ejemplo:
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+            </figure>
+
+<figcaption> sirve para añadir una descrpcion a una imagen.
+Ejemplo:
+            <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+            <figcaption>Cats love lasagna</figcaption>
+            </figure>
+
+
+<em> enfatiza palabras(lo pone en cursiva).
+Ejemplo:
+            <figcaption>Cats <em>love</em> lasagna.</figcaption>            
+
+
+
+
+-->
+-------------------------------------------------------------------------------
+
+<!-- COMENTARIOS EN HTML TANTAS LINEAS COMO QUIERAS -->
+
+
+<!-- SEO(Search Engine Optimization) = posicionamiento en buscadores. <Main> 'indica la seccion principal' </main>. 
+Los elementos dentro del <main> llevan sangria(identacion)  -->
+
+
+
+<!-- A las ETIQUETAS de un elemento que no necesitan etiqueta de cierre, se las conoces como ETIQUETA DE AUTOCIERRE (self-closing tag). 
+<img> Con esta etiqueta puedes añadir fotos a la pagina web
+
+
+-->  
+-------------------------------------------------------------------------------
+
+
+<!-- ATRIBUTOS, son palabras especiales que se usan dentro de las etiquetas para controlar el comportamiento del elemento.
+
+ATRIBUTOS:
+src= en un elemento <img> especifica la URL(localizacion de la imagen). 
+Ejemplo;
+            <img src="https://www.example.com/the-image.jpg">
+
+alt= Todos los elementos <img> deben tener un atributo alt, es un texto que se muestra en caso de que la imagen falle en cargar.
+Ejemplo;
+            <img src="cat.jpg" alt="A cat">
+
+target= con el valor _blank en la etiqueta de apertura, del elemento anchor (a) para que el enlace abra en una nueva pestaña.
+Ejemplo;
+            <p>See more <a target=_blank href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+
+-->
+-------------------------------------------------------------------------------
+
+FORMULARIO WEB:
+Un formulario web recolecta información de los usuarios.
+Ejemplo:
+<form> </form>
+
+El atributo <action> indica, dónde deben enviarse los datos del formulario. Por ejemplo, <form action="/submit-url"></form> le dice al navegador que los datos del formulario deben ser enviados a la ruta /submit-url.
+
+El elemento <input> te permite recolectar datos desde un formulario web de diferentes formas. Al igual que los elementos img, los elementos input son de auto-cierre y no necesitan etiquetas de cierre.
+
+Hay diferentes tipos de elementos <input>, los cuales los puedes crear con el atributo <type>. Puedes crear fácilmente un campo de contraseña (password), un botón de reinicio (reset) o un control para permitir a los usuarios seleccionar un archivo desde su computadora.
+Ejemplo:
+          <input type='text'>
+
+
+Para que los datos de un formulario puedan acceder al destino especificado en el atributo <action>, debes darle al campo de texto un atributo (name) y darle un valor que represente a los datos que están siendo enviados. Por ejemplo, puede utilizar la siguiente sintaxis para un campo de texto de dirección de correo electrónico: <input type="text" name="email">.
+
+Un texto provisional (placeholder) nos da una idea de que tipo de información debemos escribir en un elemento input. Por ejemplo, <input type="text" placeholder="Email address">.
+
+
+Para evitar que un usuario entregue su formulario incompleto, necesitas añadir el atributo required al elemento input. El atributo required no necesita ningún valor. Simplemente necesitas añadir la palabra required al elemento input, asegurándote de que hay espacios entre ella y los otros atributos.
+Ejemplo:
+<input type="text" name="catphotourl" placeholder="cat photo URL" required>
+
+
+Utiliza el elemento <button> para crear un botón cliqueable. Por ejemplo, <button>Click Here</button> crea un botón con el texto Click Here.
+
+El comportamiento predeterminado de un botón sin atributos en un formulario es enviar la información a la ubicación especificada en el atributo action del formulario. Sin embargo esto puede causar confusion, para evitar eso agregamos el atributo (type) con el valor con el valor submit al button.
+Ejemplo:
+          <button type='submit'>Submit</button>
+
+
+Puedes usar botones de radio (radio button) para preguntas en las que quieres que el usuario solo te dé una respuesta a partir de múltiples opciones(son circulos que se pueden seleccionar).
+
+Aquí hay un ejemplo de un radio button con la opción cat: <input type="radio"> cat. Recuerda que los elementos input son de auto-cierre, no necesitan etiqueta de cierre.
+          <input type='radio'> Indoor
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+
+
+Los elementos <label> se utilizan para ayudar a asociar el texto a un elemento input con el propio elemento <input> (especialmente para las tecnologías de asistencia como los lectores de pantalla). Por ejemplo, <label><input type="radio"> cat</label> hace que al hacer click en la palabra cat se seleccione el radio button correspondiente.(esto es el texto que se le da a los radio button)
+
+
+El atributo id se utiliza para identificar elementos HTML específicos. Cada atributo id debe tener un valor único, diferente a los demás valores id de la página.
+Ejemplo:
+id="indoor"
+
+
+Puedes observar que ambos elementos radio button pueden ser seleccionados al mismo tiempo. Para hacer que al seleccionar un radio button, el otro sé deseleccione automáticamente, ambos botones deben tener un atributo name con el mismo valor.
+Ejemplo:
+            <label><input name='indoor-outdoor' id="outdoor" type="radio"> Outdoor</label>
+            <label><input name='indoor-outdoor' id="indoor" type="radio"> Indoor</label>
+
+
+Si seleccionas el radio button Indoor y envías el formulario, los datos del radio button se basarán en sus atributos name y value. Ya que tus elementos radio button no tienen el atributo value, los datos del formulario se verán así indoor-outdoor=on, lo cual no es útil cuando tienes múltiples radio button.
+Por conveniencia, a los atributos value dales el mismo valor del atributo id de cada radio button.
+
+          <label><input  value='indoor' id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+          <label><input value='outdoor' id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>
+
+
+El elemento <fieldset> se utiliza para agrupar elementos input y label relacionados dentro de un formulario web. Los elementos fieldset son elementos de nivel de bloque, lo que significa que aparecen en una nueva línea.
+Ejemplo:
+          <fieldset>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+
+El elemento legend actúa como una leyenda/descripción, para el contenido del elemento fieldset. Le da a los usuarios un contexto sobre lo que deben ingresar en esa parte del formulario.
+Ejemplo:
+          <fieldset>
+            <legend> Is your cat an indoor or outdoor cat? </legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+
+
+Los formularios Usualmente usan casillas de verificación (checkboxes-checkbox) para preguntas que puedan tener más de una respuesta. Por ejemplo, aquí hay un checkbox (casilla de verificación) con la opción tacos: <input type="checkbox"> tacos.
+Esto se pone un cuadradito en la web.
+
+
+Hay otra manera de asociar un texto con el elemento input. Puedes anidar un texto dentro de un elemento label y añadirle un atributo for con el mismo valor del atributo id del elemento input.
+Ejemplo:
+antes:
+            <input id="loving" type="checkbox"> Loving
+
+despues:
+            <input id="loving" type="checkbox"> 
+            <label for='loving'> Loving </label>
+
+
+Para hacer que un checkbox o un radio button este seleccionado por defecto, necesitas añadir el atributo checked. No hay necesidad de agregarle un valor al atributo checked. Simplemente necesitas añadir la palabra checked al elemento input, asegurándote de que hay espacios entre ella y los otros atributos.
+
+
+Un pie de página es el elemento <footer>.
+
+Después del elemento main se añade un elemento footer.
+Ejemplo:
+    </main>
+    <footer></footer>
+  </body>
+
+
+
+
+
+
+
+
+
+
+
