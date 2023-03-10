@@ -1,0 +1,212 @@
+ Para empezar a farle estilo a las paginas, añade un elemento style dentro del elemento head.
+
+   <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+    <style>
+    </style>
+  </head>
+
+
+Puedes darle estilo a un elemento, especificándolo en el elemento style y añadiendo una propiedad para el elemento, de esta forma:
+
+elemento {
+ propiedad: valor;
+}
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+
+
+ Puede añadir el mismo grupo de estilos a varios elementos creando una lista de selectores. Cada selector se separa con comas, de esta forma:
+
+
+elemento, elemento2 {
+  propiedad: valor;
+}
+
+    <style>
+      h1, h2, p {
+        text-align: center
+      }
+    </style>
+
+ES MEJOR CREAR OTRO ARCHIVO PARA HACER CSS Y ENLANZARLO CON EL ARCIVO HTML.
+
+Anida el elemento de cierre automático <link> dentro del elemento <head>. Dale un atributo rel con el valor stylesheet y un atributo href con el valor styles.css.
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+
+En el archivo CSS no hace falta crear el elemento <style>
+
+El elemento div se utiliza principalmente para própositos de diseño.
+
+Los comentarios en CSS se ven así:
+
+/* comentario aca */
+
+El ancho de la pagina u etiqueta que elijamos (width)
+width: 80%;
+width: 50px;
+
+Para centrar horizontalmente. Puedes hacerlo dándole el valor auto a las propiedades margin-left y margin-right (margen-izquierdo y margen-derecho).
+
+Un selector de clase (class selector) se define con un punto e inmediatamente después un nombre, de esta forma:
+
+.clase-nombre {
+  estilos
+}
+
+    .menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+Para aplicar el estilo al elemento elegido, añade un atributo class al elemento con el valor correspondiente(que elegiste).
+
+   <div class='menu'>
+
+
+Podrías utilizar una imagen como fondo de la pagina.
+Añade una propiedad background-image y dale el valor de la imagen.
+Ejemplo:
+
+    body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg)
+    }
+
+
+Los elementos <article> comúnmente contienen múltiples elementos que tienen información relacionada a la pagina.
+
+          <article>
+            <p>French Vanilla</p>
+            <p>3.00</p>
+          </article>
+
+          <article>
+            <p>Caramel Macchiato </p>
+            <p>3.75</p>
+          </article>
+
+          <article>
+            <p>Pumpkin Spice</p>
+            <p>3.50</p>
+          </article>
+
+          <article>
+            <p>Hazelnut</p>
+            <p>4.00</p>
+          </article>
+
+          <article>
+            <p>Mocha</p>
+            <p>4.50</p>
+          </article>
+
+Para colocar la etiqueta <p> en la misma línea, necesitas aplicar un estilo a los elementos p y que así se comporten más como elementos inline (en línea). Añade un atributo class (clase) con el valor 'item' al primer elemento article.
+
+Puedes darle estilo a todos los elementos p que estén anidados en cualquiera de los elementos con la clase item de la siguiente forma:
+
+    .item p { }
+
+Añade una propiedad display con valor inline-block para que los elementos p se comporten como elementos inline (en línea).
+
+.item p{
+  display: inline-block
+}
+
+
+Puedes darle a tu pagina algo de espacio interno entre el contenido y los lados, añadiendo algunas propiedades de tipo padding (espaciado interno).
+
+Propiedades padding-left y padding-right ambas con un valor dé 20px(ejemplo).
+Ejemplo:
+    .menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px
+    }
+
+Tambien se puede añadir un espaciado interno superior (padding top) y espaciado interno inferior (padding bottom).
+Ejemplo:
+    .menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20;
+}
+
+Puedes borrar las cuatro propiedades y utilizar una sola propiedad padding con el valor 20px.
+
+    .menu {
+    width: 80%;
+    background-color: burlywood;
+    padding: 20px;
+    }
+
+
+Puedes cambiar la fuente (font-family) del texto,  añadiendo una propiedad font-family con el valor sans-serif u otra fuente.
+
+body {
+  font-family:sans-serif;
+}
+
+Puedes añadir un valor de respaldo para la propiedad font-family, una fuente de respaldo es utilizada en el caso de que la fuente principal no esté disponible.
+Ejemplo:
+
+    h1, h2 {
+    font-family: Impact, serif;
+    }
+
+
+Puedes usar un elemento hr para mostrar una línea divisora entre secciones con diferente contenido. Son de autocierre.
+
+<hr>
+
+Puede cambiar la altura de la línea añadiendo una propiedad height y dándole un valor.
+
+hr{
+  height: 3px;
+}
+
+
+los bordes son conocidos como border. Cada lado de un elemento puede tener un color diferente o todos pueden ser iguales.
+Ejemplo:
+
+    hr {
+    height: 3px;
+    background-color: brown;
+    border-color: brown;
+    }
+
+
+
+
+
+
+
+
+
+
+    
